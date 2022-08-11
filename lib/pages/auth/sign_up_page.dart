@@ -27,48 +27,36 @@ class _SignUpPageState extends State<SignUpPage> {
           children: [
             const SignUpHeader(),
             const SizedBox(height: 50),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-              child: TextFormField(
-                decoration: TextBoxDecoration(
-                  hintText: 'Fullname',
-                  prefixIcon: const Icon(Icons.person),
-                ),
-                controller: _nameController,
-                keyboardType: TextInputType.name,
+            TextFormBox(
+              controller: _nameController,
+              keyboardType: TextInputType.name,
+              decoration: TextBoxDecoration(
+                hintText: 'Fullname',
+                prefixIcon: const Icon(Icons.person),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-              child: TextFormField(
-                decoration: TextBoxDecoration(
-                  hintText: 'Email',
-                  prefixIcon: const Icon(Icons.email),
-                ),
-                controller: _emailController,
-                keyboardType: TextInputType.emailAddress,
+            TextFormBox(
+              controller: _emailController,
+              keyboardType: TextInputType.emailAddress,
+              decoration: TextBoxDecoration(
+                hintText: 'Email',
+                prefixIcon: const Icon(Icons.email),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-              child: TextFormField(
-                decoration: TextBoxDecoration(
-                  hintText: 'Phone Number',
-                  prefixIcon: const Icon(Icons.phone),
-                ),
-                controller: _phoneController,
-                keyboardType: TextInputType.phone,
+            TextFormBox(
+              controller: _phoneController,
+              keyboardType: TextInputType.phone,
+              decoration: TextBoxDecoration(
+                hintText: 'Phone Number',
+                prefixIcon: const Icon(Icons.phone),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-              child: TextFormField(
-                decoration: TextBoxDecoration(
-                  hintText: 'Password',
-                  prefixIcon: const Icon(Icons.vpn_key),
-                ),
-                controller: _passController,
-                obscureText: true,
+            TextFormBox(
+              controller: _passController,
+              obscureText: true,
+              decoration: TextBoxDecoration(
+                hintText: 'Password',
+                prefixIcon: const Icon(Icons.vpn_key),
               ),
             ),
             const SizedBox(height: 50),
@@ -100,6 +88,34 @@ class _SignUpPageState extends State<SignUpPage> {
             const SizedBox(height: 55),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class TextFormBox extends StatelessWidget {
+  const TextFormBox({
+    Key? key,
+    required this.controller,
+    this.keyboardType,
+    this.decoration,
+    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+    this.obscureText = false,
+  }) : super(key: key);
+  final TextInputType? keyboardType;
+  final TextEditingController? controller;
+  final InputDecoration? decoration;
+  final EdgeInsetsGeometry padding;
+  final bool obscureText;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: padding,
+      child: TextFormField(
+        decoration: decoration,
+        keyboardType: keyboardType,
+        controller: controller,
+        obscureText: obscureText,
       ),
     );
   }
