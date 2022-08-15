@@ -6,6 +6,7 @@ import 'package:learning_flutter/widgets/textboxs/textform_box.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
+  static String routeName = "SignUpPage";
 
   @override
   State<SignUpPage> createState() => _SignUpPageState();

@@ -4,6 +4,7 @@ import 'package:learning_flutter/styles/textbox_decoration.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({Key? key}) : super(key: key);
+  static String routeName = "CalculatorPage";
 
   @override
   State<CalculatorPage> createState() => _CalculatorPageState();

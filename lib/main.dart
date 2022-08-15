@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:learning_flutter/pages/auth/sign_up_page.dart';
+import 'package:learning_flutter/pages/calculator_page.dart';
+import 'package:learning_flutter/pages/flexdemo_page.dart';
 import 'package:learning_flutter/pages/home_page.dart';
+import 'package:learning_flutter/pages/whatapp_page.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      initialRoute: HomePage.routeName,
+      routes: routesList,
     ),
   );
 }
+
+Map<String, WidgetBuilder> get routesList => {
+      HomePage.routeName: (context) => const HomePage(),
+      CalculatorPage.routeName: (context) => const CalculatorPage(),
+      SignUpPage.routeName: (context) => const SignUpPage(),
+      WhatAppPage.routeName: (context) => const WhatAppPage(),
+      FlexDemoPage.routeName: (context) => const FlexDemoPage(),
+    };

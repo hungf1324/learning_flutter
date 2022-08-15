@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:learning_flutter/constants/image_assets.dart';
 import 'package:learning_flutter/pages/auth/sign_up_page.dart';
 import 'package:learning_flutter/pages/calculator_page.dart';
+import 'package:learning_flutter/pages/flexdemo_page.dart';
+import 'package:learning_flutter/pages/whatapp_page.dart';
 import 'package:learning_flutter/widgets/buttons/goto_page_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-
+  static String routeName = "HomePage";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,14 +25,22 @@ class HomePage extends StatelessWidget {
               height: 150,
               child: Image.asset(ImageAssets.catImg),
             ),
-            const GoToPageButton(
+            GoToPageButton(
               text: 'Calculator',
-              page: CalculatorPage(),
+              routeName: CalculatorPage.routeName,
             ),
-            const GoToPageButton(
+            GoToPageButton(
               text: 'SignUp Form',
-              page: SignUpPage(),
-            )
+              routeName: SignUpPage.routeName,
+            ),
+            GoToPageButton(
+              text: 'WhatApp Clone',
+              routeName: WhatAppPage.routeName,
+            ),
+            GoToPageButton(
+              text: 'Flex Demo',
+              routeName: FlexDemoPage.routeName,
+            ),
           ],
         ),
       ),

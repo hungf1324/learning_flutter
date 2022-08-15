@@ -5,19 +5,19 @@ class GoToPageButton extends StatelessWidget {
   const GoToPageButton({
     Key? key,
     required this.text,
-    required this.page,
+    required this.routeName,
   }) : super(key: key);
   final String text;
-  final Widget page;
+  final String routeName;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: 350,
       child: ElevatedButton(
         onPressed: () {
-          Navigator.push(
+          Navigator.pushNamed(
             context,
-            MaterialPageRoute(builder: (context) => page),
+            routeName,
           );
         },
         style: ElevatedButton.styleFrom(
