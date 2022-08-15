@@ -20,7 +20,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147135.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Annupriya\'s message',
+        message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         timeSent: "9Am",
       ),
     ],
@@ -31,7 +31,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147133.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'dev\'s message',
+        message: 'Sed commodo eros a sem auctor iaculis',
         timeSent: "8Am",
         hasBeenSeen: true,
       ),
@@ -43,7 +43,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147131.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Pujali\'s message',
+        message: 'Nullam in dui dapibus, volutpat arcu in, scelerisque urna',
         timeSent: "6Am",
         hasBeenSeen: true,
       ),
@@ -55,7 +55,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/168/168724.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Dipen\'s message',
+        message: 'Nunc porttitor ex suscipit, varius nisl nec, dapibus nisi',
         timeSent: "Yesterday",
       ),
     ],
@@ -66,7 +66,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147132.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Unknow Users\'s message',
+        message: 'Sed ac ex egestas, lobortis mauris ac, facilisis felis',
         timeSent: "Yesterday",
       ),
     ],
@@ -76,7 +76,7 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147143.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Anjila\'s message',
+        message: 'Integer pellentesque lorem euismod nisl molestie ornare',
         timeSent: "San20",
         hasBeenSeen: true,
       ),
@@ -88,7 +88,8 @@ List<UserModel> usersList = [
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147130.png",
     messages: <MessageModel>[
       MessageModel(
-        message: 'Another Unknow Users\'s message',
+        message:
+            'Pellentesque venenatis felis pellentesque ligula consectetur consequat',
         timeSent: "San20",
       ),
     ],
