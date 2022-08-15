@@ -17,7 +17,7 @@ class UserModel {
 List<UserModel> usersList = [
   UserModel(
     userName: 'Annupriya',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147135.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Annupriya\'s message',
@@ -28,7 +28,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'dev',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147133.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'dev\'s message',
@@ -40,7 +40,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'Pujali',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147131.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Pujali\'s message',
@@ -52,7 +52,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'Dipen',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/168/168724.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Dipen\'s message',
@@ -63,7 +63,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'Unknow Users',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147132.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Unknow Users\'s message',
@@ -73,7 +73,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'Anjila',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147143.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Anjila\'s message',
@@ -85,7 +85,7 @@ List<UserModel> usersList = [
   ),
   UserModel(
     userName: 'Another Unknow Users',
-    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147144.png",
+    avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147130.png",
     messages: <MessageModel>[
       MessageModel(
         message: 'Another Unknow Users\'s message',

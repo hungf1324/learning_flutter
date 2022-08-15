@@ -66,7 +66,7 @@ class WAStories extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: CircleAvatar(
                   maxRadius: 35,
-                  child: Image.network(newStoriers[index].avatarUrl),
+                  backgroundImage: NetworkImage(newStoriers[index].avatarUrl),
                 ),
               ),
               Text(
@@ -119,7 +119,7 @@ class MessagesPannel extends StatelessWidget {
                     ),
                     child: CircleAvatar(
                       maxRadius: 45,
-                      child: Image.network(usersList[index].avatarUrl),
+                      backgroundImage: NetworkImage(usersList[index].avatarUrl),
                     ),
                   ),
                   Expanded(
