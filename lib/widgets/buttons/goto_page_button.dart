@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/constants/colors.dart';
+import 'package:learning_flutter/constants/custom_colors.dart';
 
 class GoToPageButton extends StatelessWidget {
   const GoToPageButton({

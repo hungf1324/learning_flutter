@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/constants/image_assets.dart';
+import 'package:learning_flutter/styles/text_style.dart';
 import 'package:learning_flutter/styles/thick_divider.dart';
 
 class FlexDemoPage extends StatelessWidget {
@@ -67,7 +68,7 @@ class FlexBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
+    return Expanded(
       flex: flex,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -84,9 +85,8 @@ class FlexBanner extends StatelessWidget {
                 Text(
                   title,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: CustomTextStyle.titleStyle.copyWith(
                     fontSize: titleSize,
-                    fontWeight: FontWeight.w300,
                   ),
                 ),
                 const SizedBox(height: 10),

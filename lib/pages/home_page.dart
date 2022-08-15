@@ -3,7 +3,7 @@ import 'package:learning_flutter/constants/image_assets.dart';
 import 'package:learning_flutter/pages/auth/sign_up_page.dart';
 import 'package:learning_flutter/pages/calculator_page.dart';
 import 'package:learning_flutter/pages/flexdemo_page.dart';
-import 'package:learning_flutter/pages/whatapp_page.dart';
+import 'package:learning_flutter/pages/whatsapp_page.dart';
 import 'package:learning_flutter/widgets/buttons/goto_page_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
             ),
             GoToPageButton(
               text: 'WhatApp Clone',
-              routeName: WhatAppPage.routeName,
+              routeName: WhatsAppPage.routeName,
             ),
             GoToPageButton(
               text: 'Flex Demo',
