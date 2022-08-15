@@ -71,14 +71,13 @@ class FlexBanner extends StatelessWidget {
     return Expanded(
       flex: flex,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           if (!rightImage)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: image,
             ),
-          Flexible(
+          Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
