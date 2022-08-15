@@ -109,7 +109,6 @@ class MessagesPannel extends StatelessWidget {
             child: SizedBox(
               height: 120,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(
@@ -118,33 +117,35 @@ class MessagesPannel extends StatelessWidget {
                       right: 10.0,
                     ),
                     child: CircleAvatar(
-                      maxRadius: 45,
+                      maxRadius: 40,
                       backgroundImage: NetworkImage(usersList[index].avatarUrl),
                     ),
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           usersList[index].userName,
                           style: CustomTextStyle.titleStyle,
-                          overflow: TextOverflow.clip,
+                          overflow: TextOverflow.ellipsis,
                         ),
+                        const SizedBox(height: 10),
                         Text(
                           usersList[index].messages!.last.message,
-                          overflow: TextOverflow.clip,
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ],
                     ),
                   ),
-                  // const SizedBox(),
+                  const SizedBox(width: 20),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(usersList[index].messages!.last.timeSent),
+                      const SizedBox(height: 10),
                       usersList[index].messages!.last.hasBeenSeen == true
                           ? const Icon(
                               Icons.check_circle,

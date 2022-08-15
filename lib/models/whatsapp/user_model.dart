@@ -84,7 +84,7 @@ List<UserModel> usersList = [
     hasNewStory: true,
   ),
   UserModel(
-    userName: 'Another Unknow Users',
+    userName: 'A really really really really really really long name Users',
     avatarUrl: "https://cdn-icons-png.flaticon.com/512/147/147130.png",
     messages: <MessageModel>[
       MessageModel(
